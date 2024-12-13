@@ -1,0 +1,60 @@
+<%- include("layouts/header") -%>
+
+<div class="sitename">
+    <h1>Note-Vote</h1>
+</div>
+
+<div class="accordion" id="accordionExample">
+    <!-- Login Section -->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Log In
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h1 class="accord-title">Log in</h1>
+                <!-- Login form -->
+                <form id="loginForm" action="/login" method="POST">
+                    <label for="username">Email Address</label><br>
+                    <input type="email" id="username" name="username" placeholder="Email Address" required><br>
+                
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+                
+                    <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                </form>                
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Section -->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Register
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h1 class="accord-title">Sign Up</h1>
+                <!-- Registration form -->
+                <form action="/register" method="POST">
+                    <label for="username">Email Address</label><br>
+                    <input type="email" id="username" name="username" placeholder="Email Address" required><br>
+                
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" placeholder="Password" required><br>
+                
+                    <label for="invitecode">Invite Code</label><br>
+                    <input type="text" id="invitecode" name="invitecode" placeholder="Invite Code" required><br><br>
+                
+                    <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                </form>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("layouts/footer") -%>

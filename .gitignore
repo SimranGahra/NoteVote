@@ -1,0 +1,75 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.env
+
+# NPM dependencies
+package-lock.json*
+yarn.lock
+pnpm-lock.yaml
+
+# json file for users.json 
+/package.json
+/package-lock.json
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Build directories
+/dist/
+/build/
+/out/
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+*.swo
+*.~undo-tree~
+
+# Database files
+*.sqlite
+*.sqlite3
+
+# Ignore coverage results
+coverage/
+*.lcov
+
+# IDEs and editors
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Cache and temp files
+.nyc_output
+coverage/
+.cache/
+.tmp/
+
+# Miscellaneous
+*.swp
+*.bak
+*.tmp
+*.backup
